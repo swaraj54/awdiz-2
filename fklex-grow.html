@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grow</title>
+    <style>
+        #screen {
+            width: 100%;
+            height: 500px;
+            border: 5px solid red;
+            display: flex;
+        }
+        
+        #screen > div{
+            flex-grow: 1;
+            height: 100%;
+            border: 5px solid black;
+        }
+        
+        #screen > div:nth-child(1){
+            flex-grow: 5;
+        }
+        #screen > div:nth-child(2){
+            flex-grow: 3;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="screen">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    
+</body>
+</html>
